@@ -18,8 +18,9 @@ which you can check out from here:
 https://github.com/QuickLogic-Corp/qorc-sdk
 
 Be sure to get the submodules.  An easy way to get everything is:
+```
 git clone --recursive https://github.com/QuickLogic-Corp/qorc-sdk.git
-
+```
 Try this in the qorc-sdk directory:
 ```
 ~/qorc-sdk$ docker run -it --rm -v $(pwd):/home/ic/work qorc-sdk-user bash
