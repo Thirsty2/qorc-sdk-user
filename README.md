@@ -1,3 +1,16 @@
+## qorc-sdk-user
+
+This repository contains a sample Dockerfile and a github action workflow
+that automatically builds a container image based on the qorc-sdk 
+Docker container, adding a user and an entrypoint.  
+
+The prebuilt qorc-sdk-user Docker container image found under packages
+in this repository may be pulled or run directly to build the qorc-sdk
+samples.
+
+You may also use Docker to build and run a qorc-sdk-user image locally using
+the following instructions:
+
 To build qorc-sdk-user run the build from the dockerfiles subdirectory:
 ```
 cd dockerfiles
@@ -40,7 +53,7 @@ create_newapp.py      qf_advancedfpga  qf_bootloader_uart  qf_gwtestharness  qf_
 ic@822f51f37df1:~/work/qf_apps$ make
 
 ```
-The build may take a while.  Each sample project contains an output/bin directory with the results of the build:
+Building the samples may take a while.  Each sample project contains an output/bin directory with the results of the build:
 ```
 ic@822f51f37df1:~/work/qf_apps/qf_helloworldhw/GCC_Project/output/bin$ ls
 qf_helloworldhw.bin  qf_helloworldhw.elf  qf_helloworldhw.map
